@@ -4,12 +4,12 @@ import json
 url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Api-Key AQVNyn6LpAnOA09Vial9DbmNAe-_rudMs_Dwky8V"
+    "Authorization": "Api-Key "
 }
 
 def get_response(user_message: str):
     prompt = {
-        "modelUri": "gpt://b1gdagv1r0cu13pohtdu/yandexgpt-lite",
+        "modelUri": "gpt:///yandexgpt-lite",
         "completionOptions": {
             "stream": False,
             "temperature": 0.6,
